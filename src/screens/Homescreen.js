@@ -1,35 +1,34 @@
 import {View,FlatList} from "react-native";
 import { useState } from "react";
-import CategoryList from "./src/component/CategoryList";
-import Demo2 from "./src/component/Demo2";
-import Header from "./src/component/Header"
-import Searches from "./src/component/Searches";
-import Resturants from "./src/component/Resturants";
-export default function App(){
+import CategoryList from "../component/CategoryList";
+import Header from "../component/Header"
+import Searches from "../component/Searches";
+import Resturants from "../component/Resturants";
+export default function Homescreen(){
   const allCategories = [
     {
       name:"Burger",
-      image: require("./src/assets/images/burger.png")
+      image: require("../assets/images/burger.png")
     },
     {
       name:"Fast-Food",
-      image: require("./src/assets/images/fast-food.png")
+      image: require("../assets/images/fast-food.png")
     },
     {
       name:"Starter",
-      image: require("./src/assets/images/food.png")
+      image: require("../assets/images/food.png")
     },
     {
       name:"Fried Potatoes",
-      image: require("./src/assets/images/fried-potatoes.png")
+      image: require("../assets/images/fried-potatoes.png")
     },
     {
       name:"Hamburger",
-      image: require("./src/assets/images/hamburger.png")
+      image: require("../assets/images/hamburger.png")
     },
     {
       name:"Sushi",
-      image: require("./src/assets/images/sushi.png")
+      image: require("../assets/images/sushi.png")
     }
   ]
   let [active,setActive] = useState("Burger");
